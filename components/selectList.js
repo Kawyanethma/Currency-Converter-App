@@ -79,12 +79,13 @@ const CustomSelectList = ({ data, value }) => {
         dropdownTextStyles={{ color: "#fff" }}
         inputStyles={{ color: "#fff" }}
       />
+      <Text/>
       {loading ? (
         <ActivityIndicator />
       ) : (
-        answer * value != 0 ?  <Text style={{ fontSize: "20", color: "#fff"}}>
+        answer * value != 0 ?  <Text style={{ fontSize: "25", color: "#fff", fontWeight:"700"}}>
         {value} {basedCurrency} = {answer * value} {selected}
-      </Text> : <Text style={{ fontSize: "20", color: "#fff" }}>Select Currency</Text>
+      </Text> : <Text style={{ fontSize: "25", color: "#fff", fontWeight:"700"}}>Select Currency</Text>
       )}
     </View>
   );

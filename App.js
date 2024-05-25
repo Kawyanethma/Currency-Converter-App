@@ -54,7 +54,7 @@ export default function App() {
           console.log(number);
         }}
         style={styles.input}
-        placeholder="Type here to translate!"
+        placeholder="Type here to convert"
         keyboardType="numeric"
       />
       <CustomSelectList data={data} value={number} />
